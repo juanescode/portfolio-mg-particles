@@ -15,7 +15,7 @@ import {
 import { cn } from "@/lib/utils";
 import { Dock, DockIcon } from "./magicui/dock";
 import { ModeToggle } from "./toggle-theme";
-import { DATA } from "@/data";
+import { DATA, DataLinkedIn } from "@/data";
 
 export function Navbar() {
   return (
@@ -62,6 +62,7 @@ export function Navbar() {
                 </TooltipTrigger>
                 <TooltipContent>
                   <p>{name}</p>
+                {/* <ModeToggle /> */}
                 </TooltipContent>
               </Tooltip>
             </DockIcon>
@@ -70,10 +71,21 @@ export function Navbar() {
           <DockIcon>
             <Tooltip>
               <TooltipTrigger asChild>
-                {/* <ModeToggle /> */}
+                <Link
+                  href={DataLinkedIn.LinkedIn.url}
+                  aria-label={DataLinkedIn.LinkedIn.name}
+                  className={cn(
+                    buttonVariants({ variant: "ghost", size: "icon" }),
+                    "size-12 rounded-full"
+                  )}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <DataLinkedIn.LinkedIn.icon className="size-4" />
+                </Link>
               </TooltipTrigger>
               <TooltipContent>
-                <p>Theme</p>
+                <p>{DataLinkedIn.LinkedIn.name}</p>
               </TooltipContent>
             </Tooltip>
           </DockIcon>

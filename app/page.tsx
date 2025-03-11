@@ -20,7 +20,6 @@ export default function Home() {
       <Services />
       <Portfolio />
       <Testimonials />
-      <Contact />
       <Footer />
     </main>
   );

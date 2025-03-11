@@ -1,45 +1,37 @@
 import { GitHubLogoIcon } from "@radix-ui/react-icons";
 import {
   SquareTerminal,
-  BookText,
   Briefcase,
   Brush,
   GitBranchIcon,
-  CodeSquare,
-  Home,
   Inbox,
   Mail,
   PanelsTopLeft,
   Phone,
-  UserRound,
   UsersRound,
   Wrench,
-  PhoneCall,
-  Youtube,
   Linkedin,
-  Github,
   HomeIcon,
-  MailIcon,
 } from "lucide-react";
 
 export const dataAboutMe = [
   {
     id: 1,
-    name: "Experience",
+    name: "Experiencia",
     icon: <Briefcase />,
-    description: "+1 year of experience in web development",
+    description: "+30 proyectos en diseño",
   },
   {
     id: 2,
-    name: "Clients",
+    name: "Clientes",
     icon: <UsersRound />,
-    description: "+11 satisfied clients",
+    description: "Atención comercial",
   },
   {
     id: 3,
-    name: "Projects",
+    name: "Habilidades",
     icon: <Wrench />,
-    description: "+23 completed projects",
+    description: "Gestión empresarial",
   },
 ];
 
@@ -47,21 +39,6 @@ export const DATA = {
   navbar: [{ href: "/", icon: HomeIcon, label: "Home" }],
   contact: {
     social: {
-      GitHub: {
-        name: "GitHub",
-        url: "https://github.com/juanescode",
-        icon: Github,
-      },
-      LinkedIn: {
-        name: "LinkedIn",
-        url: "https://www.linkedin.com/in/juan-esteban-villada-gallego-6015552bb/",
-        icon: Linkedin,
-      },
-      Youtube: {
-        name: "Youtube",
-        url: "https://www.youtube.com/@juanescode976",
-        icon: Youtube,
-      },
       email: {
         name: "Send Email",
         url: "mailto:juanestebanvilladagallego23@gmail.com",
@@ -73,6 +50,14 @@ export const DATA = {
         icon: Phone,
       },
     },
+  },
+};
+
+export const DataLinkedIn = {
+  LinkedIn: {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/juan-esteban-villada-gallego-6015552bb/",
+    icon: Linkedin,
   },
 };
 
@@ -94,73 +79,49 @@ export const dataSlider = [
 export const dataExperience = [
   {
     id: 1,
-    title: "Frontend Development",
+    title: " Diseño Gráfico y Multimedia",
     experience: [
       {
-        name: "HTML",
+        name: "Adobe Photoshop",
       },
       {
-        name: "CSS",
+        name: "Adobe Illustrator",
       },
       {
-        name: "JavaScript",
+        name: "Corel Draw",
       },
       {
-        name: "Tailwind CSS",
+        name: "Diseño de packaging",
       },
       {
-        name: "React",
+        name: "Promoción",
       },
       {
-        name: "Nextjs",
+        name: "Publicidad",
       },
     ],
   },
   {
     id: 2,
-    title: "Backend Development  🥷",
+    title: "Ventas y Atención al Cliente",
     experience: [
       {
-        name: "Node JS",
+        name: "Investigación de mercados",
       },
       {
-        name: "Mongo DB",
+        name: "Estrategias de ventas",
       },
       {
-        name: "PostgreSQL",
+        name: "Servicio al cliente",
       },
       {
-        name: "MySQL",
+        name: "Negociación ",
       },
       {
-        name: "Typescript",
+        name: "Distribución",
       },
       {
-        name: "Express JS",
-      },
-    ],
-  },
-  {
-    id: 3,
-    title: "Tools",
-    experience: [
-      {
-        name: "Git",
-      },
-      {
-        name: "VSCode",
-      },
-      {
-        name: "Figma",
-      },
-      {
-        name: "Postman",
-      },
-      {
-        name: "Docker",
-      },
-      {
-        name: "AWS",
+        name: "logística",
       },
     ],
   },
@@ -202,95 +163,83 @@ export const dataPortfolio = [
     id: 6,
     title: "Landing Page VikingRoom",
     image: "/vikingroom2.png",
-    urlDemo: "https://project-viking.vercel.app/"
-  }
+    urlDemo: "https://project-viking.vercel.app/",
+  },
 ];
 
 export const dataServices = [
   {
     id: 1,
-    title: "Web development",
+    title: "Estrategia Comercial y Ventas",
     icon: <PanelsTopLeft />,
     features: [
       {
-        name: "React Development implementing dynamic interfaces with reusable components and efficient state management.",
+        name: "Desarrollo de estrategias de ventas.",
       },
       {
-        name: "Optimization with Next.js for faster loading.",
+        name: "Análisis de mercado y segmentación de clientes para campañas efectivas.",
       },
       {
-        name: "Styling with Tailwind CSS to obtain modern utility-first styles for rapid development.",
+        name: "Negociación y gestión de relaciones con clientes y proveedores.",
       },
       {
-        name: "JavaScript Programming for all business logic and user interaction in robust web applications.",
+        name: "Creación de planes comerciales basados en datos y tendencias del sector.",
       },
       {
-        name: "API Integration & State Management using API connections and ensuring application consistency.",
+        name: "Implementación de herramientas CRM para optimizar la atención al cliente.",
       },
       {
-        name: "Social Media Login Integration for Your Web Applications",
-      },
-      {
-        name: "Continuous Maintenance and Support",
+        name: "Servicio al cliente con enfoque en fidelización y experiencia de usuario.",
       },
     ],
   },
   {
     id: 2,
-    title: "Backend Development",
+    title: "Diseño Gráfico y Publicitario",
     icon: <SquareTerminal />,
     features: [
       {
-        name: "Developing backend applications using Node.js for building fast and scalable solutions.",
+        name: "Creación de piezas gráficas para impresión y medios digitales.",
       },
       {
-        name: "Implementing TypeScript to enhance code quality and type safety in backend development.",
+        name: "Edición y diseño en Adobe Photoshop, Illustrator y Corel Draw.",
       },
       {
-        name: "Designing and developing efficient and robust RESTful APIs for seamless communication between services.",
+        name: "Desarrollo de material publicitario para marcas y campañas.",
       },
       {
-        name: "Managing and optimizing relational databases like PostgreSQL and MySQL, as well as NoSQL databases like MongoDB.",
+        name: " Diseño de formatos para impresión en gran formato y digitales.",
       },
       {
-        name: "Deploying web applications on modern platforms to ensure accessibility, reliability, and performance.",
+        name: "Creación de videos publicitarios para redes sociales y anuncios.",
+      },
+      {
+        name: "Identidad visual y branding para empresas y emprendimientos.",
       },
     ],
   },
   {
     id: 3,
-    title: "UI/UX Design",
+    title: "Gestión Empresarial y Marketing",
     icon: <Brush />,
     features: [
       {
-        name: "Intuitive Design for a Seamless User Experience",
+        name: "Creación y gestión de estrategias de marketing digital.",
       },
       {
-        name: "Interactive Prototyping to Visualize the Interface",
+        name: "Manejo de redes sociales para posicionamiento de marcas.",
       },
       {
-        name: "User Research to Understand Needs and Expectations",
+        name: "Optimización de campañas publicitarias en diferentes plataformas.",
       },
       {
-        name: "Usability Optimization to Enhance Accessibility",
+        name: "Desarrollo de proyectos empresariales y emprendimientos.",
       },
       {
-        name: "Usability Testing to Evaluate the Experience",
+        name: "Optimización de procesos comerciales mediante tecnología.",
       },
       {
-        name: "Responsive Design to Adapt to Different Devices",
-      },
-      {
-        name: "Information Architecture to Organize Content",
-      },
-      {
-        name: "Visual Design to Create Aesthetic Appeal",
-      },
-      {
-        name: "Interaction Design to Define User Interactions",
-      },
-      {
-        name: "Typography to Enhance Readability and Color Theory to Create Visual Harmony",
+        name: "Manejo de herramientas ofimáticas como Excel y Google Sheets.",
       },
     ],
   },
@@ -325,28 +274,34 @@ export const dataTestimonials = [
     id: 1,
     name: "Universidad libre ",
     description:
-      "I am a 5th-year (9th semester) student of Systems Engineering, currently focused on acquiring deep knowledge in software development, system architecture, and emerging technologies. My university education has provided me with a solid foundation in programming, algorithms, databases, and system design, while my passion for technology drives me to constantly explore new tools and methodologies in the field of computer science. I am seeking opportunities to apply my skills in challenging projects that allow me to grow both professionally and personally",
+      "Soy estudiante de Ingeniería Comercial en la Universidad Libre de Pereira, actualmente cursando sexto semestre. Mi formación académica me ha brindado una base sólida en estrategias de negocio, ventas, marketing, diseño de packaging, y análisis financiero. Me apasiona el mundo empresarial y busco constantemente aplicar mis conocimientos en proyectos que me permitan potenciar la innovación, el diseño publicitario y la gestión comercial.",
     imageUrl: "unilibre.png",
   },
   {
     id: 2,
-    name: "ScanOrderly",
+    name: "Sena",
     description:
-      "ScanOrderly is a project I am developing with a friend. It is a management software for restaurants, bars, hotels, etc., that optimizes operations, from real-time order management to inventory control and detailed analysis of sales and expenses. With an intuitive interface and the ability to generate real-time reports, it allows owners to make informed decisions, helping to increase operational efficiency and business profitability.",
-    imageUrl: "/ScanOrderlyL.png",
+      "Centro de Diseño e Innovación Tecnológica Industrial, Risaralda, con formación en el Centro de Diseño e Innovación Multimedia. Durante mi trayectoria académica, adquirí conocimientos y habilidades en diseño gráfico, impresión en gran formato, desarrollo de piezas digitales para redes sociales y producción audiovisual.",
+    imageUrl: "/sen.png",
   },
   {
     id: 3,
-    name: "Viking room",
+    name: "Master Publik Publicidad S.A.S",
     description:
-      "The viking room, I developed the first functional prototype of an application that served as a virtual menu. Customers could access the menu by scanning a QR code, and it also included an admin panel where authorized accounts could add, publish, or unpublish products visible to customers. This experience was key, as it served as the inspiration for developing ScanOrderly, taking the initial ideas to a more advanced level of management and operational optimization.",
+      "Lideré el equipo de ventas y diseñadores, asegurando la entrega de soluciones publicitarias innovadoras y de alta calidadm Diseñé material gráfico para campañas publicitarias, impresión en gran formato y piezas digitales adaptadas a las necesidades de los clientes, Brindé asesoramiento personalizado a clientes, optimizando la estrategia visual y comercial de sus marcas, Gestioné la atención al cliente y negociaciones comerciales, fortaleciendo la fidelización y crecimiento de la cartera de clientes.Coordiné la producción y entrega de materiales publicitarios, garantizando el cumplimiento de plazos y estándares de calidad",
     imageUrl: "/viking.jpg",
   },
   {
     id: 4,
-    name: "Ingaj",
+    name: "Decathlon | Pereira",
     description:
-      "Ingaj is a construction company established in the city of Pereira, specializing in infrastructure projects and civil works development. During my time with Ingaj, I contributed to the development of a custom application for managing and controlling material costs and inventories. This application was designed to optimize the tracking of resources used in the various stages of construction, allowing for precise monitoring of the flow of materials, from acquisition to their use on each project. Additionally, the tool provided detailed reports on associated costs, facilitating informed decision-making and improving budget management efficiency.",
-    imageUrl: "/ingaj.jpeg",
+      "Ofrecí asesoramiento especializado a clientes sobre productos deportivos, asegurando una experiencia de compra personalizada y satisfactoria, gestioné la organización y reposición de inventario, optimizando la presentación y disponibilidad de los productos en tienda, implementé estrategias de venta basadas en las necesidades del cliente, impulsando el crecimiento de las ventas y la fidelización, mantuve altos estándares de servicio al cliente, promoviendo una experiencia de compra dinámica y alineada con la identidad de la marca.",
+    imageUrl: "/deca.png",
   },
+  {
+    id: 5,
+    name: "Misshe (Local Comercial de Prendas de Vestir) | Dosquebradas",
+    description: "Gestioné el punto de venta, incluyendo inventario, caja y atención al cliente. Desarrollé estrategias de ventas y fidelización, asesoré en la selección de prendas y optimicé la exhibición de productos. Coordiné proveedores y logística para mantener un flujo eficiente de stock. Esta experiencia me permitió fortalecer habilidades en ventas, atención al cliente, diseño gráfico y gestión comercial.",
+  imageUrl: "/misshe.jpg",
+  }
 ];

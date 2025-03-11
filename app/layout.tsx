@@ -18,7 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={urbanist.className}>
-        <ThemeProvider
+      <ThemeProvider
           attribute="class"
           defaultTheme="dark"
           enableSystem

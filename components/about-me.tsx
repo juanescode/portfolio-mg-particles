@@ -14,7 +14,7 @@ import Image from "next/image";
 const AboutMe = () => {
   return (
     <div className="p-6 md:px-12 md:py-30 max-w-5xl mx-auto" id="about-me">
-      <Title title="About Me" subtitle="know me" />
+      <Title title="Sobre mi" subtitle="Conoceme" />
       <div className="grid md:grid-cols-2">
         <div className="py-12 md:py-0 flex items-center justify-center">
           <Carousel
@@ -57,21 +57,20 @@ const AboutMe = () => {
             ))}
           </div>
           <p className="my-8">
-            Hi! My name is Juanes. I am a computer science student.
+          ¡Hola! Mi nombre es Michelle Galindo Ruiz. Soy técnica en diseño e integración multimedia e ingeniera comercial en formación.
             <br />
             <br />
-            🔭 I’m currently a computer science student.
+            🔭 Actualmente estudio Ingeniería Comercial en la Universidad Libre de Pereira (sexto semestre).
             <br />
-            🌱 I’m currently learning TypeScript.
+            🌱 Me especializo en ventas, diseño gráfico y servicio al cliente.
             <br />
-            👯 I’m looking to collaborate on projects.
+            👯 Busco colaborar en proyectos relacionados con ventas, publicidad y estrategias comerciales.
             <br />
-            💬 Ask me about Sql, JavaScript, Sql, Postgres, mongoDB, NodeJS,
-            TypeScript and much more.
+            💬 Pregúntame sobre Photoshop, Illustrator, Corel Draw, ventas, análisis de datos, marketing y diseño de packaging
           </p>
 
           <Button>
-            <a href="tel:+573206233559" className="flex items-center">
+            <a href="tel:+573023026715" className="flex items-center">
               <Phone size={20} className="mr-2" /> Talk later
             </a>
           </Button>
